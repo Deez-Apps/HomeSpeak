@@ -24,13 +24,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         optionsTableView.dataSource = self
-        
-        // testing music function
-//        let mediaPickerController = MPMediaPickerController()
-//        presentViewController(mediaPickerController, animated: true, completion: nil)
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

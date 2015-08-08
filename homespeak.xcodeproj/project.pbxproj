@@ -17,11 +17,8 @@
 		88D4217B1B75CD710075DFFF /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4217A1B75CD710075DFFF /* HealthManager.swift */; };
 		88D4217D1B75D5700075DFFF /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4217C1B75D5700075DFFF /* OptionCell.swift */; };
 		88D4217F1B75D9530075DFFF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4217E1B75D9530075DFFF /* Extensions.swift */; };
-		88D4218B1B7671A10075DFFF /* libHKWirelessHDlw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D421881B7671A10075DFFF /* libHKWirelessHDlw.a */; };
-		88D4218C1B7671A10075DFFF /* License-iOS-Omni.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88D421891B7671A10075DFFF /* License-iOS-Omni.pdf */; };
-		88D4218D1B7671A10075DFFF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 88D4218A1B7671A10075DFFF /* README.md */; };
 		88D421901B768AA10075DFFF /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88D4218F1B768AA10075DFFF /* song.mp3 */; };
-		88D421921B768D2F0075DFFF /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D421911B768D2F0075DFFF /* PlayViewController.swift */; };
+		C473A9DAB5D746EB0BCC6295 /* Pods_homespeak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06CDCAD5B584967E6E92A17 /* Pods_homespeak.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		436FF51AA9210D118E86FB74 /* Pods-homespeak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homespeak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-homespeak/Pods-homespeak.debug.xcconfig"; sourceTree = "<group>"; };
 		88D421521B75CC640075DFFF /* homespeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homespeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D421561B75CC640075DFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88D421571B75CC640075DFFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,17 +48,10 @@
 		88D4217A1B75CD710075DFFF /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		88D4217C1B75D5700075DFFF /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
 		88D4217E1B75D9530075DFFF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		88D421821B7671A10075DFFF /* DeviceGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroup.h; sourceTree = "<group>"; };
-		88D421831B7671A10075DFFF /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
-		88D421841B7671A10075DFFF /* HKWControlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWControlHandler.h; sourceTree = "<group>"; };
-		88D421851B7671A10075DFFF /* HKWDeviceEventHandlerSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWDeviceEventHandlerSingleton.h; sourceTree = "<group>"; };
-		88D421861B7671A10075DFFF /* HKWPlayerEventHandlerSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWPlayerEventHandlerSingleton.h; sourceTree = "<group>"; };
-		88D421881B7671A10075DFFF /* libHKWirelessHDlw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHKWirelessHDlw.a; sourceTree = "<group>"; };
-		88D421891B7671A10075DFFF /* License-iOS-Omni.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "License-iOS-Omni.pdf"; sourceTree = "<group>"; };
-		88D4218A1B7671A10075DFFF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		88D4218E1B76723F0075DFFF /* homespeak-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "homespeak-Bridging-Header.h"; sourceTree = "<group>"; };
 		88D4218F1B768AA10075DFFF /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
-		88D421911B768D2F0075DFFF /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		8C7C84EB7A27C94434D18564 /* Pods-homespeak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homespeak.release.xcconfig"; path = "Pods/Target Support Files/Pods-homespeak/Pods-homespeak.release.xcconfig"; sourceTree = "<group>"; };
+		B06CDCAD5B584967E6E92A17 /* Pods_homespeak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homespeak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D421781B75CD410075DFFF /* HealthKit.framework in Frameworks */,
-				88D4218B1B7671A10075DFFF /* libHKWirelessHDlw.a in Frameworks */,
+				C473A9DAB5D746EB0BCC6295 /* Pods_homespeak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4288D98BE8AD2267AC501716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B06CDCAD5B584967E6E92A17 /* Pods_homespeak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64B3D1CBEC9D200179ED322F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				436FF51AA9210D118E86FB74 /* Pods-homespeak.debug.xcconfig */,
+				8C7C84EB7A27C94434D18564 /* Pods-homespeak.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		88D421491B75CC640075DFFF = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +98,8 @@
 				88D421541B75CC640075DFFF /* homespeak */,
 				88D4216A1B75CC650075DFFF /* homespeakTests */,
 				88D421531B75CC640075DFFF /* Products */,
+				64B3D1CBEC9D200179ED322F /* Pods */,
+				4288D98BE8AD2267AC501716 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +115,6 @@
 		88D421541B75CC640075DFFF /* homespeak */ = {
 			isa = PBXGroup;
 			children = (
-				88D421801B7671A10075DFFF /* HKWirelessHDSDKlw */,
 				88D421791B75CD410075DFFF /* homespeak.entitlements */,
 				88D4218F1B768AA10075DFFF /* song.mp3 */,
 				88D421571B75CC640075DFFF /* AppDelegate.swift */,
@@ -113,7 +122,6 @@
 				88D4217E1B75D9530075DFFF /* Extensions.swift */,
 				88D4217C1B75D5700075DFFF /* OptionCell.swift */,
 				88D421591B75CC640075DFFF /* ViewController.swift */,
-				88D421911B768D2F0075DFFF /* PlayViewController.swift */,
 				88D4215B1B75CC640075DFFF /* Main.storyboard */,
 				88D4215E1B75CC640075DFFF /* Images.xcassets */,
 				88D421601B75CC640075DFFF /* LaunchScreen.xib */,
@@ -148,37 +156,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		88D421801B7671A10075DFFF /* HKWirelessHDSDKlw */ = {
-			isa = PBXGroup;
-			children = (
-				88D421811B7671A10075DFFF /* include */,
-				88D421871B7671A10075DFFF /* lib */,
-				88D421891B7671A10075DFFF /* License-iOS-Omni.pdf */,
-				88D4218A1B7671A10075DFFF /* README.md */,
-			);
-			path = HKWirelessHDSDKlw;
-			sourceTree = "<group>";
-		};
-		88D421811B7671A10075DFFF /* include */ = {
-			isa = PBXGroup;
-			children = (
-				88D421821B7671A10075DFFF /* DeviceGroup.h */,
-				88D421831B7671A10075DFFF /* DeviceInfo.h */,
-				88D421841B7671A10075DFFF /* HKWControlHandler.h */,
-				88D421851B7671A10075DFFF /* HKWDeviceEventHandlerSingleton.h */,
-				88D421861B7671A10075DFFF /* HKWPlayerEventHandlerSingleton.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		88D421871B7671A10075DFFF /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				88D421881B7671A10075DFFF /* libHKWirelessHDlw.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88D421711B75CC650075DFFF /* Build configuration list for PBXNativeTarget "homespeak" */;
 			buildPhases = (
+				F4CEF554D225B9869A60E01A /* Check Pods Manifest.lock */,
 				88D4214E1B75CC640075DFFF /* Sources */,
 				88D4214F1B75CC640075DFFF /* Frameworks */,
 				88D421501B75CC640075DFFF /* Resources */,
+				27D7E7D6316EC07DEDCC9D5E /* Embed Pods Frameworks */,
+				0576026D5F1D5BD91F79AEA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,7 +208,7 @@
 				TargetAttributes = {
 					88D421511B75CC640075DFFF = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = DSQACR84TV;
+						DevelopmentTeam = 8M4855ELR9;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -272,7 +252,6 @@
 				88D421621B75CC640075DFFF /* LaunchScreen.xib in Resources */,
 				88D4215F1B75CC640075DFFF /* Images.xcassets in Resources */,
 				88D421901B768AA10075DFFF /* song.mp3 in Resources */,
-				88D4218C1B7671A10075DFFF /* License-iOS-Omni.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,17 +264,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0576026D5F1D5BD91F79AEA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-homespeak/Pods-homespeak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27D7E7D6316EC07DEDCC9D5E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-homespeak/Pods-homespeak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4CEF554D225B9869A60E01A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88D4214E1B75CC640075DFFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D4218D1B7671A10075DFFF /* README.md in Sources */,
 				88D4217F1B75D9530075DFFF /* Extensions.swift in Sources */,
 				88D4217D1B75D5700075DFFF /* OptionCell.swift in Sources */,
 				88D4215A1B75CC640075DFFF /* ViewController.swift in Sources */,
 				88D4217B1B75CD710075DFFF /* HealthManager.swift in Sources */,
-				88D421921B768D2F0075DFFF /* PlayViewController.swift in Sources */,
 				88D421581B75CC640075DFFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +448,7 @@
 		};
 		88D421721B75CC650075DFFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436FF51AA9210D118E86FB74 /* Pods-homespeak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = homespeak/homespeak.entitlements;
@@ -443,6 +469,7 @@
 		};
 		88D421731B75CC650075DFFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7C84EB7A27C94434D18564 /* Pods-homespeak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = homespeak/homespeak.entitlements;

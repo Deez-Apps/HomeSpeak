@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="22l-X0-4dW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZCz-nk-Ctr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -78,11 +78,49 @@
                     </view>
                     <connections>
                         <outlet property="optionsTableView" destination="G06-Du-pUv" id="nqc-l4-ueN"/>
+                        <segue destination="Usv-ek-aL0" kind="presentation" identifier="healthData" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="o6q-kG-CKH"/>
+                        <segue destination="R8Z-gc-N2r" kind="presentation" identifier="musicPlaylists" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="rP6-CA-4z3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VLm-Kl-WW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="180" y="109"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tdU-kJ-xc8">
+            <objects>
+                <viewController id="R8Z-gc-N2r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uzn-of-QRx"/>
+                        <viewControllerLayoutGuide type="bottom" id="WSi-lV-UAy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NIC-83-HWX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wER-ov-N19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="175"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8SW-uG-m1j">
+            <objects>
+                <viewController id="Usv-ek-aL0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qXh-t3-FyW"/>
+                        <viewControllerLayoutGuide type="bottom" id="PNG-eE-Jej"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5js-QR-lSA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYn-xx-MXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-709"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="QuG-t3-VTY">

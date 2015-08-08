@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class PlayViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,7 +16,8 @@ class PlayViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        if !HKWControlHandler.sharedInstance().initializing() && !HKWControlHandler.sharedInstance().isInitialized() {
+   if !HKWControlHandler.sharedInstance().initializing() && !HKWControlHandler.sharedInstance().isInitialized()
+   {
             println("initializing in PlaylistTVC")
             
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {

@@ -8,30 +8,53 @@
 
 import UIKit
 import MediaPlayer
+import CoreLocation
+import MapKit
+import SystemConfiguration
+
 
 let g_licenseKey = "2FA8-2FD6-C27D-47E8-A256-D011-3751-2BD6"
 var g_alert: UIAlertController!
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
     
     let numberOfOptions: Int = 4
     let heightForOptionRow: CGFloat = 100
 
     @IBOutlet weak var optionsTableView: UITableView!
+    var locationManager = CLLocationManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        // Do any additional setup after loading the view, typically from a nib.
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
         optionsTableView.dataSource = self
+        optionsTableView.delegate = self
         
         // testing music function
 //        let mediaPickerController = MPMediaPickerController()
 //        presentViewController(mediaPickerController, animated: true, completion: nil)
+    }
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println("error")
+    }
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var userLocation:CLLocation = locations[0] as! CLLocation
+        locationManager.stopUpdatingLocation()
+        let location = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
         
-        
+        let location2 = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
+        if location.latitude != location2.latitude || location.longitude != location2.longitude{
+            
+        }
         
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,7 +64,19 @@ class ViewController: UIViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
 }
 
 extension ViewController : UITableViewDataSource {
@@ -83,5 +118,14 @@ extension ViewController : UITableViewDataSource {
 extension ViewController : UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return heightForOptionRow
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == 0{
+            performSegueWithIdentifier("healthData", sender: self)
+        }
+        else if indexPath.row == 3{
+            performSegueWithIdentifier("musicPlaylists", sender: self)
+
+        }
     }
 }

@@ -1,4 +1,4 @@
-# ProjectCreature
-change by Coby
+# HomeSpeak
+a project by Deez Apps
 
-Project Creature features an application where users get to 'train and progress along with their creatures'.
+

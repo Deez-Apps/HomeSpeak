@@ -15,6 +15,12 @@ var g_alert: UIAlertController!
 
 class ViewController: UIViewController {
     
+  
+    
+    @IBAction func pause(sender: AnyObject) {
+        HKWControlHandler.sharedInstance().pause()
+    }
+    
     var locationManager = CLLocationManager()
     let numberOfOptions: Int = 4
     let heightForOptionRow: CGFloat = 100
@@ -35,6 +41,8 @@ class ViewController: UIViewController {
         locationManager.delegate = self
         
         optionsTableView.dataSource = self
+        optionsTableView.delegate = self
+        
         
         HKWDeviceEventHandlerSingleton.sharedInstance().delegate = self
 
@@ -99,6 +107,16 @@ extension ViewController : UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return heightForOptionRow
     }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        
+        if indexPath.row == 0{
+            performSegueWithIdentifier("healthData", sender: self)
+        }
+        if indexPath.row == 3{
+            performSegueWithIdentifier("musicPlaylists", sender: self)
+        }
+    }
 }
 
 extension ViewController: CLLocationManagerDelegate {
@@ -155,6 +173,9 @@ extension ViewController: CLLocationManagerDelegate {
 
 extension ViewController : HKWDeviceEventHandlerDelegate {
     func hkwDeviceStateUpdated(deviceId: Int64, withReason reason: Int) {
+        if reason < 5 {
+            return
+        }
         if !isPlaying {
             var audioPlayer:AVAudioPlayer!
             
@@ -162,14 +183,18 @@ extension ViewController : HKWDeviceEventHandlerDelegate {
             
             if audioFilePath != nil {
                 
-                //                var audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+                    var audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
                 
 //                var audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
                 
 //                HKWControlHandler.sharedInstance().printDeviceList()
                 
-                let urlWithText = NSURL(string: "http://tts-api.com/tts.mp3?q=hello+world.")
-                HKWControlHandler.sharedInstance().playCAF(urlWithText, songName: "Song", resumeFlag: true)
+//                let urlWithText = NSURL(string: "http://tts-api.com/tts.mp3?q=hello+world+plus+plus.")
+                HKWControlHandler.sharedInstance().playCAF(audioFileUrl, songName: "song", resumeFlag: true)
+//                HKWControlHandler.sharedInstance().playStreamingMedia("http://tts-api.com/tts.mp3?q=hello+world+plus+plus+plus+plus", withCallback: { (result) -> Void in
+//                    println("completed")
+//                    self.isPlaying = false
+//                })
                 isPlaying = true
             } else {
                 println("audio file is not found")

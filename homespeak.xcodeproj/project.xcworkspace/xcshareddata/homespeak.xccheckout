@@ -10,14 +10,14 @@
 	<string>homespeak</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>76AB63FEDB17941F916D2FC8764382AEE70D5AFD</key>
+		<key>84990D97429D37BE9E058EE36487F45F1F07A9B2</key>
 		<string>https://github.com/Deez-Apps/ProjectCreature.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>homespeak.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>76AB63FEDB17941F916D2FC8764382AEE70D5AFD</key>
+		<key>84990D97429D37BE9E058EE36487F45F1F07A9B2</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>76AB63FEDB17941F916D2FC8764382AEE70D5AFD</string>
+	<string>84990D97429D37BE9E058EE36487F45F1F07A9B2</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>76AB63FEDB17941F916D2FC8764382AEE70D5AFD</string>
+			<string>84990D97429D37BE9E058EE36487F45F1F07A9B2</string>
 			<key>IDESourceControlWCCName</key>
 			<string>homespeak</string>
 		</dict>
